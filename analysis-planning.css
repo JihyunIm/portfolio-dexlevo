@@ -1,0 +1,62 @@
+/* Scoped to the graphic in the Study Design competency dialog. */
+.planning-map {
+  --plan-ink: #193550;
+  --plan-teal: #147d78;
+  --plan-border: #d9e2e8;
+  margin: 0; padding: 0; min-width: 0;
+  background: #fff; border: 1px solid var(--plan-border); border-radius: 12px;
+  color: var(--plan-ink); container: planning / inline-size;
+}
+.planning-map .plan-caption { padding: 22px 22px 0; }
+.planning-map .plan-title { display: block; font-size: 20px; line-height: 1.25; font-weight: 750; }
+.planning-map .plan-subtitle { display: block; margin-top: 4px; color: #516173; font-size: 13px; line-height: 1.5; }
+.planning-map .plan-steps {
+  display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 22px;
+  margin: 18px 20px 16px; padding: 0; list-style: none;
+}
+.planning-map .plan-step {
+  position: relative; min-width: 0; margin: 0; padding: 17px 6px 15px;
+  display: grid; grid-template-rows: auto auto 68px auto; justify-items: center; align-content: start;
+  text-align: center; background: #f5f8f9; border: 1px solid var(--plan-border); border-radius: 8px;
+}
+.planning-map .plan-sequence { color: var(--plan-teal); font-size: 11px; font-weight: 750; letter-spacing: .12em; line-height: 1.4; }
+.planning-map .plan-step h4 { margin: 6px 0 0; font-size: 15.5px; font-weight: 750; line-height: 1.4; letter-spacing: -.04em; word-break: keep-all; }
+.planning-map .plan-icon { display: block; width: 60px; height: 53px; align-self: center; fill: none; stroke: var(--plan-ink); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.planning-map .plan-icon .plan-teal { stroke: var(--plan-teal); }
+.planning-map .plan-icon .plan-wash { fill: #e7f2f1; }
+.planning-map .plan-keywords { color: #425568; font-size: 13px; line-height: 1.45; word-break: keep-all; }
+.planning-map .plan-keywords > span { color: var(--plan-teal); }
+.planning-map .plan-arrow { position: absolute; top: calc(50% - 6px); right: -21px; width: 18px; height: 12px; color: var(--plan-teal); }
+.planning-map .plan-outputs {
+  width: fit-content; max-width: calc(100% - 28px); margin: 0 auto 18px; padding: 8px 16px;
+  display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 7px 17px;
+  background: #edf5f4; border-radius: 6px; font-size: 13px; line-height: 1.35;
+}
+.planning-map .plan-outputs strong { padding-right: 15px; border-right: 1px solid #bfd2d2; font-weight: 700; }
+.planning-map .plan-outputs > span { display: inline-flex; align-items: center; gap: 5px; }
+.planning-map .plan-outputs svg { width: 17px; height: 17px; fill: none; stroke: var(--plan-teal); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+@container planning (max-width: 690px) {
+  .planning-map .plan-steps { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@container planning (min-width: 401px) and (max-width: 690px) {
+  .planning-map .plan-step:nth-child(2)::after {
+    position: absolute; content: ''; right: 50%; bottom: -12px; height: 11px; width: calc(100% + 24px);
+    border: solid var(--plan-teal); border-width: 0 1px 1px 0;
+  }
+  .planning-map .plan-step:nth-child(2) .plan-arrow {
+    top: auto; right: calc(150% + 18px); bottom: -22px; width: 12px; transform: rotate(90deg);
+  }
+}
+@container planning (max-width: 400px) {
+  .planning-map .plan-caption { padding: 15px 14px 0; }
+  .planning-map .plan-title { font-size: 18px; }
+  .planning-map .plan-steps { grid-template-columns: minmax(0,1fr); gap: 18px; margin: 14px; }
+  .planning-map .plan-step { padding: 12px 10px; grid-template-columns: 48px 1fr; grid-template-rows: auto auto auto; column-gap: 8px; align-content: center; justify-items: start; text-align: left; }
+  .planning-map .plan-sequence, .planning-map .plan-step h4, .planning-map .plan-keywords { grid-column: 2; }
+  .planning-map .plan-step h4 { margin: 3px 0; font-size: 15px; }
+  .planning-map .plan-icon { grid-row: 1 / 4; grid-column: 1; width: 46px; height: 43px; justify-self: center; }
+  .planning-map .plan-arrow { top: auto; right: calc(50% - 7px); bottom: -16px; transform: rotate(90deg); width: 14px; }
+  .planning-map .plan-outputs { gap: 5px 9px; padding: 7px 8px; font-size: 12px; }
+  .planning-map .plan-outputs strong { padding-right: 8px; }
+  .planning-map .plan-outputs svg { width: 15px; height: 15px; }
+}

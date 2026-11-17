@@ -1,0 +1,65 @@
+/* Preserve the original timeline; use the space below the heading for it alone. */
+.career-timeline-only .slide-inner {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.career-timeline-only .timeline-alt-header { margin-bottom: 0; }
+
+.career-timeline-only .career-line-wrap {
+  align-self: center;
+  margin-inline: 8.5%;
+  /* A trailing margin moves the centered group up by half that distance. */
+  margin-block-end: clamp(0px, calc(var(--slide-h) * .22 - 92px), 66px);
+  padding: 56px 10px 0; /* contains the original Current Position flag */
+}
+
+.career-timeline-only .career-line {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  height: auto;
+}
+
+.career-timeline-only .career-line::before,
+.career-timeline-only .career-line::after { top: 38px; }
+
+.career-timeline-only .career-marker {
+  position: relative;
+  justify-self: center;
+  transform: none;
+}
+
+@media screen and (min-width: 721px), print {
+  .career-timeline-only .career-marker.current strong {
+    position: relative;
+    left: 50%;
+    width: max-content;
+    white-space: nowrap;
+    transform: translateX(-50%);
+  }
+}
+
+/* Give each label a full column when the original end insets become too tight. */
+@media screen and (max-width: 1000px) {
+  .career-timeline-only .career-line-wrap { margin-inline: 3.5%; }
+  .career-timeline-only .career-line { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .career-timeline-only .career-marker { width: 100%; padding-inline: 3px; }
+  .career-timeline-only .career-line::after { left: calc(100% * 5 / 6); width: min(170px, 30%); }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1100px) {
+  .slide.career-timeline-only { height: var(--slide-h); }
+  .career-timeline-only .career-marker.current strong { font-size: clamp(12px, 1.75vw, 18px); }
+}
+
+@media screen and (max-width: 720px) {
+  .career-timeline-only .slide-inner { min-height: max(380px, 60svh); }
+  .career-timeline-only .career-line-wrap { margin-inline: -30px; margin-block-end: 12px; padding-inline: 4px; }
+  .career-timeline-only .career-marker .date { font-size: clamp(10px, 2.8vw, 12px); }
+  .career-timeline-only .career-marker strong { font-size: clamp(15px, 3.8vw, 18px); }
+  .career-timeline-only .career-marker em { font-size: clamp(11px, 2.9vw, 12px); }
+  .career-timeline-only .career-marker.current .career-current-label {
+    font-size: clamp(8.5px, 2.3vw, 12px);
+    letter-spacing: .05em;
+  }
+}
