@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 330" role="img" aria-label="연구 설계, 무작위 배정 및 allocation table 시각화 예시">
+  <rect x="0" y="0" width="920" height="330" fill="#f8fafb" />
+  <rect x="42" y="30" width="836" height="270" rx="14" fill="#ffffff" stroke="#d8dee6" />
+
+  <g font-family="Pretendard, Noto Sans KR, Segoe UI, Arial">
+    <text x="70" y="60" font-size="18" font-weight="900" fill="#17324d">Study Design Planning Flow</text>
+    <text x="70" y="80" font-size="12" font-weight="750" fill="#68717d">Raw database, research question, literature review, statistical assumptions, randomization, allocation table</text>
+
+    <rect x="70" y="104" width="170" height="154" rx="10" fill="#f8fafb" stroke="#d8dee6" />
+    <text x="94" y="130" font-size="13" font-weight="900" fill="#17324d">Input Review</text>
+    <g font-size="11" font-weight="800">
+      <rect x="94" y="146" width="120" height="24" rx="6" fill="#eef4f3" />
+      <text x="108" y="162" fill="#1f8a83">Raw database</text>
+      <rect x="94" y="178" width="120" height="24" rx="6" fill="#fff8e6" />
+      <text x="108" y="194" fill="#8a6420">Research question</text>
+      <rect x="94" y="210" width="120" height="24" rx="6" fill="#f6eef8" />
+      <text x="108" y="226" fill="#6e5aa7">Literature review</text>
+    </g>
+
+    <path d="M242 181 H284" fill="none" stroke="#1f8a83" stroke-width="4" stroke-linecap="round" />
+    <path d="M274 171 L286 181 L274 191" fill="none" stroke="#1f8a83" stroke-width="4" stroke-linecap="round"
+      stroke-linejoin="round" />
+
+    <rect x="292" y="104" width="180" height="154" rx="10" fill="#ffffff" stroke="#d8dee6" />
+    <text x="316" y="130" font-size="13" font-weight="900" fill="#17324d">Analysis Strategy</text>
+    <g font-size="10.5" font-weight="850" fill="#46515e">
+      <rect x="316" y="148" width="132" height="20" rx="10" fill="#eef4f3" />
+      <text x="334" y="162">Endpoint definition</text>
+      <rect x="316" y="176" width="132" height="20" rx="10" fill="#fff8e6" />
+      <text x="335" y="190">Model selection</text>
+      <rect x="316" y="204" width="132" height="20" rx="10" fill="#f4f6fa" />
+      <text x="333" y="218">Result display plan</text>
+    </g>
+    <path d="M332 240 H432" stroke="#d9684b" stroke-width="5" stroke-linecap="round" opacity="0.78" />
+    <circle cx="332" cy="240" r="5" fill="#d9684b" />
+    <circle cx="382" cy="240" r="5" fill="#c99a2e" />
+    <circle cx="432" cy="240" r="5" fill="#1f8a83" />
+
+    <path d="M474 181 H516" fill="none" stroke="#d9684b" stroke-width="4" stroke-linecap="round" />
+    <path d="M506 171 L518 181 L506 191" fill="none" stroke="#d9684b" stroke-width="4" stroke-linecap="round"
+      stroke-linejoin="round" />
+
+    <rect x="524" y="86" width="300" height="180" rx="12" fill="#fffdf8" stroke="#d8dee6" />
+    <rect x="548" y="110" width="144" height="24" rx="12" fill="#17324d" />
+    <text x="570" y="127" font-size="13" font-weight="900" fill="#ffffff">Randomization</text>
+
+    <g font-size="10" font-weight="850">
+      <text x="550" y="154" fill="#68717d">Eligible units</text>
+      <circle cx="560" cy="176" r="10" fill="#eef4f3" stroke="#1f8a83" />
+      <circle cx="590" cy="176" r="10" fill="#eef4f3" stroke="#1f8a83" />
+      <circle cx="620" cy="176" r="10" fill="#eef4f3" stroke="#1f8a83" />
+      <circle cx="650" cy="176" r="10" fill="#eef4f3" stroke="#1f8a83" />
+      <text x="554" y="180" fill="#17324d">01</text>
+      <text x="584" y="180" fill="#17324d">02</text>
+      <text x="614" y="180" fill="#17324d">03</text>
+      <text x="644" y="180" fill="#17324d">04</text>
+    </g>
+
+    <path d="M668 176 C692 144 724 144 744 164" fill="none" stroke="#9aa3ad" stroke-width="3"
+      stroke-linecap="round" stroke-dasharray="5 5" />
+    <path d="M668 176 C692 208 724 208 744 188" fill="none" stroke="#9aa3ad" stroke-width="3"
+      stroke-linecap="round" stroke-dasharray="5 5" />
+
+    <g font-size="10" font-weight="900" text-anchor="middle">
+      <rect x="746" y="146" width="54" height="28" rx="8" fill="#eef4f3" stroke="#1f8a83" />
+      <text x="773" y="164" fill="#1f8a83">Group A</text>
+      <rect x="746" y="186" width="54" height="28" rx="8" fill="#fff1ed" stroke="#d9684b" />
+      <text x="773" y="204" fill="#d9684b">Group B</text>
+    </g>
+
+    <g font-size="10" font-weight="850">
+      <text x="550" y="230" fill="#68717d">Allocation sequence</text>
+      <rect x="550" y="242" width="26" height="18" rx="5" fill="#1f8a83" opacity="0.16" />
+      <rect x="582" y="242" width="26" height="18" rx="5" fill="#d9684b" opacity="0.16" />
+      <rect x="614" y="242" width="26" height="18" rx="5" fill="#d9684b" opacity="0.16" />
+      <rect x="646" y="242" width="26" height="18" rx="5" fill="#1f8a83" opacity="0.16" />
+      <rect x="678" y="242" width="26" height="18" rx="5" fill="#1f8a83" opacity="0.16" />
+      <rect x="710" y="242" width="26" height="18" rx="5" fill="#d9684b" opacity="0.16" />
+      <text x="559" y="255" fill="#1f8a83">A</text>
+      <text x="591" y="255" fill="#d9684b">B</text>
+      <text x="623" y="255" fill="#d9684b">B</text>
+      <text x="655" y="255" fill="#1f8a83">A</text>
+      <text x="687" y="255" fill="#1f8a83">A</text>
+      <text x="719" y="255" fill="#d9684b">B</text>
+    </g>
+
+    <rect x="70" y="278" width="230" height="26" rx="8" fill="#eef4f3" />
+    <text x="92" y="295" font-size="11" font-weight="900" fill="#17324d">Sample size: effect size, alpha, power</text>
+    <rect x="320" y="278" width="210" height="26" rx="8" fill="#fff8e6" />
+    <text x="342" y="295" font-size="11" font-weight="900" fill="#17324d">Statistical assumptions check</text>
+    <rect x="550" y="278" width="274" height="26" rx="8" fill="#f4f6fa" />
+    <text x="572" y="295" font-size="11" font-weight="900" fill="#17324d">Allocation table + Table/Figure shell</text>
+  </g>
+</svg>
