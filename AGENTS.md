@@ -7,5 +7,5 @@ This repository belongs to JihyunIm and contains only Jihyun Im's portfolio webs
 - Preserve the original ChatGPT Sites portfolios and the existing usyijh-max GitHub connection.
 - Preserve the established layout and professional Korean wording unless the user requests changes.
 - Do not invent research experience, qualifications, results, or publications.
-- Use relative asset URLs so the site works under /portfolio/.
+- Use relative asset URLs so the site works under /portfolio-dexlevo/.
 - Current content is the DEXLEVO version. Keep company-specific versions separate when adding new versions.

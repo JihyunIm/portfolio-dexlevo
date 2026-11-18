@@ -1,8 +1,8 @@
-# Portfolio — Jihyun Im
+# DEXLEVO Portfolio — Jihyun Im
 
 DEXLEVO 지원용 임상연구 포트폴리오입니다. 기존 디자인과 내용을 유지한 웹사이트 소스입니다.
 
-- 공개 사이트: https://jihyunim.github.io/portfolio/
+- 공개 사이트: https://jihyunim.github.io/portfolio-dexlevo/
 - 시작 페이지: `index.html`
 - 포트폴리오 내용과 상세 탭: `portfolio.html`
 - 추가 스타일: `analysis-planning.css`, `career-overview.css`
